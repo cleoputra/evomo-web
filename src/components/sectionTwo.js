@@ -3,12 +3,17 @@ import {Container, Row, Col, Image} from 'react-bootstrap'
 import '../styles/global.css'
 
 import cover from "../images/s2.svg"
+import logo2 from "../images/l-s2.svg"
 
 const SectionTwo = () =>{
 
     return(
       <div>
-        <Container>
+      <Container>
+      <Row className="d-flex justify-content-center align-items-center">
+          <Image src={logo2} width="auto" height="auto"/>
+        
+        </Row>             
  
         <Row className="d-flex justify-content-center align-items-center">
           <Col md="{{ span: 6, offset: 3 }}"><h6 className="txt-1">ENVIRONMENT MONITORING SYSTEM</h6></Col>
