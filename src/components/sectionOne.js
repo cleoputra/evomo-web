@@ -1,40 +1,51 @@
 import React from "react"
 import {Container, Row, Button, Col, Image} from 'react-bootstrap'
 import '../styles/global.css'
-import head from "../images/s1.png"
-import ikan from "../images/Perikanan.svg"
-import ternak from "../images/Peternakan.svg"
-import tani from "../images/Pertanian.svg"
-import gedung from "../images/Building.svg"
-import publik from "../images/Public Area.svg"
+import head from "../images/s1.svg"
+import telkom from "../images/Logo Telkom.svg"
+import sierra from "../images/Logo Sierad.svg"
+import ibr from "../images/Logo IBR 1.svg"
 
-const SectionOne = () =>{
+//import video popup library
+import ModalVideo from 'react-modal-video'
+
+class SectionOne extends React.Component {
+
+    constructor () {
+      super()
+      this.state = {
+        isOpen: false
+      }
+      this.openModal = this.openModal.bind(this)
+    }
     
-    return(
-        <Container>
+    openModal () {
+      this.setState({isOpen: true})
+    }
+
+    render() {
+        return(
+            <Container>
             <Row className="justify-content-md-center">
-                <Col md={{ span: 5, offset: 1 }}>
-                    <h1>Realtime Monitoring <br/>Jadi Lebih Mudah</h1>
+                <Col md={{ span: 5, offset: 1, order: 1 }} large={6} xs={{order: 12}}>
+                    <h1 className="sb">Realtime Monitoring <br/>Jadi Lebih Mudah</h1>
                     <p>
                         Ketahui kualitas lingkungan Anda <br/>dengan integrasi antara sensor dan <br/>sistem secara otomatis
                     </p>
-                    <Button className="b1" size="md">Coba sekarang</Button><br/><br/><br/>
-                    <Image src={ikan} width={50} height={50} />
-                    <Image className="i1" src={ternak} width={50} height={50} />
-                    <Image className="i1" src={tani} width={50} height={50} />
-                    <Image className="i1" src={gedung} width={50} height={50} />
-                    <Image className="i1" src={publik} width={50} height={50} />
+                    <Button className="b1" size="md">Free Trial</Button><br/><br/><br/>
+                    <Image src={telkom}  />
+                    <Image className="i1" src={sierra}  />
+                    <Image className="i1" src={ibr}  />
 
                 </Col>
-                <Col md={6}>
-                    <img src= {head} width={500} height={372} className="ml-3" alt="Generic placeholder"
-                    />
-                </Col>
-                
+                <Col md={{span:6, order:12}} >
+                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='_7MWdBbt5F4' onClose={() => this.setState({isOpen: false})} />
+                    <Button variant="outline-light" onClick={this.openModal}><img class="i1-mob mob-resp" src= {head} width={500} height={372} className="mob-resp" alt="Generic placeholder"/></Button>
+                </Col>                
             </Row>  
         </Container>
-
-    )
+        )
+    }
 }
 
 export default SectionOne

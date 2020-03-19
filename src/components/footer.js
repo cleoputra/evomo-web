@@ -8,6 +8,7 @@ import yt from "../images/yt.svg"
 import linkedin from "../images/linkedin.svg"
 import insta from "../images/insta.svg"
 import evomo from "../images/cp-fo.svg"
+import evomob from "../images/cp-fo-mo.svg"
 
 const Footer = () => {
   return (
@@ -16,14 +17,15 @@ const Footer = () => {
         <div className="row">
           
           {/* Col 0 */}
-          <div className="col">
+          <div className="col no-flex">
             <ul className="list-unstyled">
-              <li><img className="lo-fo" src={evomo} width="auto" height="auto" alt="Evomo Copyright"/></li>
+              <li><img className="lo-fo content-desktop" src={evomo} width="auto" height="auto" alt="Evomo Copyright"/></li>
+              <li><img className="lo-fo content-mobile" src={evomob} width="auto" height="auto" alt="Evomo Copyright"/></li>
             </ul>
           </div>
           
           {/* Col 1 */}
-          <div className="col">
+          <div className="col no-flex" >
             <ul className="list-unstyled">
               <a href="/"><li className="li-fo">Beranda</li> </a>
               <a href="/"><li className="li-fo">Cara Kerja</li></a>
@@ -34,7 +36,7 @@ const Footer = () => {
             </ul>
           </div>
           {/* Col 2 */}
-          <div className="col">
+          <div className="col no-flex">
             <ul className="list-unstyled">
               <li className="li-fo"><b>Berhubungan dengan kami</b></li>
               <li><img className="lo-fo" src={logof} width="86" height="36" alt="Jeager"/></li>
@@ -44,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
           {/* Col 3 */}
-          <div className="col"> 
+          <div className="col no-flex"> 
             <ul className="list-unstyled">
               <li className="li-fo"><b>Ikuti kami di sini</b></li>
               <li className="li-fo"><img src={linkedin} width="20" height="23" alt="Mail"/> Evomo_id</li>

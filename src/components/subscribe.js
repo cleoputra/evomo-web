@@ -13,9 +13,9 @@ const Subscribe = () =>{
             <h5 className="txt-subs white">Solusi Pantau Kondisi Lebih Mudah</h5>          
           </Col>
 
-          <Col md={6}>
+          <Col md={6} sm={6}>
                 <Button variant="outline-primary white ml25">
-                    Coba Sekarang
+                    Free Trial
                 </Button>
           </Col>
         </Row>

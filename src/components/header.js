@@ -9,7 +9,6 @@ const Header = () => (
       src={logo}
       width="auto"
       height="auto"
-      className="d-inline-block align-top"
       alt="React Bootstrap logo"
     />
   </Navbar.Brand>
@@ -17,9 +16,9 @@ const Header = () => (
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">
       <Nav.Link href="index.js"><b>Beranda</b></Nav.Link>
-      <Nav.Link href="/">Fitur</Nav.Link>
-      <Nav.Link href="/">Cara Kerja</Nav.Link>
-      <Nav.Link href="/">Hubungi Kami</Nav.Link>
+      {/* <Nav.Link href="/">Fitur</Nav.Link>
+      <Nav.Link href="/">Cara Kerja</Nav.Link> */}
+      <Nav.Link href=" https://wa.me/6282211776239" target="_blank">Hubungi Kami</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

@@ -3,6 +3,7 @@ import {Container, Row, Col, Image} from 'react-bootstrap'
 import '../styles/global.css'
 
 import cover from "../images/s2.svg"
+import mobcover from "../images/s2-mob.svg"
 import logo2 from "../images/l-s2.svg"
 
 const SectionTwo = () =>{
@@ -10,7 +11,7 @@ const SectionTwo = () =>{
     return(
       <div>
       <Container>
-      <Row className="d-flex justify-content-center align-items-center">
+      <Row className=" justify-content-center ">
           <Image src={logo2} width="auto" height="auto"/>
         
         </Row>             
@@ -27,7 +28,8 @@ const SectionTwo = () =>{
           <Col md={{ span: 9 }}><h5 className="txt-3 ml25">Aplikasi <b>Monitoring Berbasis Kondisi</b> yang memberikan Anda informasi mengenai kondisi yang ingin anda pantau berdasarkan indikator yang Anda tentukan baik berupa suhu, kelembaban, tekanan udara, pemakaian listrik, jumlah debit air, integrasi cctv, dll. Evomo menjadi solusi Anda dalam memonitoring proses pertanian, perikanan, peternakan, pembangunan dan area publik.</h5></Col>
         </Row>
       </Container>
-      <Image src={cover} width="100%" />
+      <Image className="content-desktop" src={cover} width="100%" />
+      <Image className="content-mobile" src={mobcover} width="100%" height="auto"  />
       </div>
     )
 }
