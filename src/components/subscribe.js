@@ -14,7 +14,7 @@ const Subscribe = () =>{
           </Col>
 
           <Col md={6} sm={6}>
-                <Button variant="outline-primary white ml25">
+                <Button variant="outline-primary white mls25">
                     Free Trial
                 </Button>
           </Col>

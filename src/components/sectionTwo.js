@@ -10,13 +10,12 @@ const SectionTwo = () =>{
 
     return(
       <div>
-      <Container>
-      <Row className=" justify-content-center ">
+      <Container className="partition">
+        <Row className=" justify-content-center mlp5">
           <Image src={logo2} width="auto" height="auto"/>
-        
         </Row>             
  
-        <Row className="d-flex justify-content-center align-items-center">
+        <Row className="d-flex justify-content-center align-items-center mlp5">
           <Col md="{{ span: 6, offset: 3 }}"><h6 className="txt-1">ENVIRONMENT MONITORING SYSTEM</h6></Col>
         </Row>
  
