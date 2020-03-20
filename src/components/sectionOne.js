@@ -25,7 +25,7 @@ class SectionOne extends React.Component {
 
     render() {
         return(
-            <Container>
+        <Container className="partition">
             <Row className="justify-content-md-center">
                 <Col md={{ span: 5, offset: 1, order: 1 }} large={6} xs={{order: 12}}>
                     <h1 className="sb">Realtime Monitoring <br/>Jadi Lebih Mudah</h1>

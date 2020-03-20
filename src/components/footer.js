@@ -49,10 +49,10 @@ const Footer = () => {
           <div className="col no-flex"> 
             <ul className="list-unstyled">
               <li className="li-fo"><b>Ikuti kami di sini</b></li>
-              <li className="li-fo"><img src={linkedin} width="20" height="23" alt="Mail"/> Evomo_id</li>
-              <li className="li-fo"><img src={yt} width="20" height="23" alt="Mail"/> Evomo</li>
-              <li className="li-fo"><img src={insta} width="20" height="23" alt="Mail"/> @evomo_id</li>
-              <li className="li-fo"><img src={fb} width="20" height="23" alt="Mail"/> Evomo</li>
+              <a href="https://www.linkedin.com/company/evomo-id/" target="blank"><li className="li-fo"><img src={linkedin} width="20" height="23" alt="LinkedIn"/> Evomo_id</li></a>
+              <a href="https://www.youtube.com/channel/UCOHfXUOEO6EEBQYqMpbfwTA" target="blank"><li className="li-fo"><img src={yt} width="20" height="23" alt="Youtube"/> Evomo</li></a>
+              <a href="https://www.instagram.com/evomo_id/" target="blank"><li className="li-fo"><img src={insta} width="20" height="23" alt="Instagram"/> @evomo_id</li></a>
+              <a href="https://m.facebook.com/profile.php?id=104526554498630&ref=content_filter" target="blank"><li className="li-fo"><img src={fb} width="20" height="23" alt="Mail"/> Evomo</li></a>
             </ul>
           </div>
           </div>        
