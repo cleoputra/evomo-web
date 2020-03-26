@@ -4,18 +4,7 @@ import PropTypes from "prop-types"
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
-      <head>
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117703110-3"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-117703110-3');
-        </script>
-
-        
+      <head>        
         <meta name="keywords" content="Environment Monitoring, Monitoring, New Technology, Internet of Things, IoT, Manufacturing, Pabrik, Monitoring Sistem, Teknologi Terbaru"/>
         <meta name="description" content="Evomo is a solution for monitoring environment with Internet of Things (IIoT) technology."/>
         <meta charSet="utf-8" />
@@ -24,8 +13,19 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <title>Evomo - Environment Monitoring System</title>
         {props.headComponents}
       </head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117703110-3"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117703110-3');
+      </script>
+
+
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <div
