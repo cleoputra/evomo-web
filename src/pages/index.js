@@ -11,6 +11,8 @@ import Footer from "../components/footer"
 
 
 const IndexPage = () => (
+
+
   <div>
    <Header/>    
 

@@ -1,7 +1,7 @@
 import React from "react"
 import {Container, Row, Button, Col, Image} from 'react-bootstrap'
 import '../styles/global.css'
-import head from "../images/s1.svg"
+import head from "../images/s1.png"
 import telkom from "../images/Logo Telkom.svg"
 import sierra from "../images/Logo Sierad.svg"
 import ibr from "../images/Logo IBR 1.svg"

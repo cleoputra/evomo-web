@@ -3,7 +3,7 @@ import {Container, Row, Col, Image} from 'react-bootstrap'
 import '../styles/global.css'
 
 import cover from "../images/s2.svg"
-import mobcover from "../images/s2-mob.svg"
+import mobcover from "../images/s2-mob.png"
 import logo2 from "../images/l-s2.svg"
 
 const SectionTwo = () =>{

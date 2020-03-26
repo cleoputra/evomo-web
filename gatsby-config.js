@@ -1,11 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Landing Page Site`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Evomo | Environment Monitoring System`,
+    description: `Evomo is a solution for monitoring environment with Internet of Things (IIoT) technology.`,
+    author: `Evomo Admin`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
