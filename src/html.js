@@ -16,16 +16,6 @@ export default function HTML(props) {
         <title>Evomo - Environment Monitoring System</title>
         {props.headComponents}
       </head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117703110-3"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-117703110-3');
-      </script>
-
-
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <div
