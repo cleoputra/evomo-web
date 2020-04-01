@@ -2,8 +2,9 @@ import React from "react"
 import {Navbar, Nav} from 'react-bootstrap'
 import logo from "../images/logo.svg"
 
+
 const Header = () => (
-  <Navbar bg="white" expand="lg">
+  <Navbar className="pad-header" bg="white" expand="lg">
   <Navbar.Brand href="#home">
     <img
       src={logo}
@@ -15,10 +16,10 @@ const Header = () => (
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">
-      <Nav.Link href="index.js"><b>Beranda</b></Nav.Link>
-      {/* <Nav.Link href="/">Fitur</Nav.Link>
-      <Nav.Link href="/">Cara Kerja</Nav.Link> */}
-      <Nav.Link href=" https://wa.me/6282211776239" target="_blank">Hubungi Kami</Nav.Link>
+      <Nav.Link className="pad-header-li" href="/">Beranda</Nav.Link>
+      <Nav.Link className="pad-header-li" href="/fitur/">Fitur</Nav.Link>
+      <Nav.Link className="pad-header-li" href="/">Cara Kerja</Nav.Link>
+      <Nav.Link className="pad-header-li" href="https://wa.me/6282211776239" target="_blank">Hubungi Kami</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

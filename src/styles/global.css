@@ -8,6 +8,20 @@ body{
 
 }
 
+.pad-header{
+    padding-left: 9.5rem;
+    padding-right: 9rem;
+}
+
+.pad-header-li{
+    padding-left: 2rem !important;
+}
+
+.pad-header-li:hover{
+    text-decoration: solid underline;
+    font-weight: bold;
+}
+
 .partition{
     margin-top: 50px;
     margin-bottom: 30px;
@@ -183,6 +197,15 @@ body{
         height: auto;
     }
 
+    .pad-header{
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+    }
+
+    .pad-header-li{
+        padding-left: 1rem !important;
+    }
+
     /* SEC 1 */
     .i1-mob{
      
@@ -257,5 +280,44 @@ body{
     .no-flex{
         flex-basis:auto ;
     }
+}
 
+/* IPHONE */
+@media (max-width: 350px) {
+    body{
+        max-width: auto;
+    }
+    .resp{
+        max-width: 290px;
+    }
+
+    .content-mobile{
+        display: block;
+    }
+    .content-desktop{
+        display:none;
+    }
+    
+    .mob-resp{
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    /* SEC 1 */
+
+    .sb{
+        font-size: 1.5rem;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+    }
+
+    .b1{
+        width: 40%;
+    }
+
+    .i1{
+        margin-left: 0px;
+    }
 }
