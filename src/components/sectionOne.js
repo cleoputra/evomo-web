@@ -32,8 +32,8 @@ class SectionOne extends React.Component {
                     <p>
                         Ketahui kualitas lingkungan Anda <br/>dengan integrasi antara sensor dan <br/>sistem secara otomatis
                     </p>
-                    <Button className="b1" size="md">Free Trial</Button><br/><br/><br/>
-                    <Image src={telkom}  />
+                    <a href="https://wa.me/6282211776239"><Button className="b1" size="md">Free Trial</Button></a><br/><br/><br/>
+                    <Image  className="i1" src={telkom}  />
                     <Image className="i1" src={sierra}  />
                     <Image className="i1" src={ibr}  />
 

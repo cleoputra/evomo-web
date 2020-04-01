@@ -11,22 +11,19 @@ import Footer from "../components/footer"
 
 
 const IndexPage = () => (
-
-
   <div>
-   <Header/>    
+    <Header/>    
 
-  <SectionOne/>
-  <br/><br/><br/><br/>
-  <SectionTwo/>
-  <br/><br/><br/><br/>
-  <SectionThree/>
+    <SectionOne/>
+    <br/><br/><br/><br/>
+    <SectionTwo/>
+    <br/><br/><br/><br/>
+    <SectionThree/>
 
-  <br/><br/><br/><br/>
-  <Subscribe/>
+    <br/><br/><br/><br/>
+    <Subscribe/>
 
-  <Footer />
-
+    <Footer />
   </div>
 )
 

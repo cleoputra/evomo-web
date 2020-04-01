@@ -31,8 +31,6 @@ const Footer = () => {
               <a href="/"><li className="li-fo">Cara Kerja</li></a>
               <a href="/"><li className="li-fo">Fitur</li></a>
               <a href="/"><li className="li-fo">Hubungi Kami</li></a>
-              <a href="/"><li className="li-fo">Kebijakan Privasi</li></a>
-              <a href="/"><li className="li-fo">Syarat dan Ketentuan</li></a>
             </ul>
           </div>
           {/* Col 2 */}
