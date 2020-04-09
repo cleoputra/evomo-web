@@ -42,7 +42,7 @@ const FiturSectionTwo = () =>{
             <Col className="cont3" md={{ span: 5, offset: 1, order: 1 }} sm={6} xs={{ span: 6, order: 12}} large={6}>
                 <h1 className="head1">Notifikasi</h1>
                 <p className="resp">
-                Informasi langsung terkait anomali yang sedang terjadi pada indikator seperti Danger, Warning, maupun Offline sehingga Anda dapat mengambil tindakan dengan cepat.</p>
+                Informasi langsung terkait anomali yang sedang terjadi pada indikator seperti <i>Danger</i>, <i>Warning</i>, maupun <i>Offline</i> sehingga Anda dapat mengambil tindakan dengan cepat.</p>
             </Col>
             <Col md={{ span: 6, order: 12}}>
                 <img src= {image2} width={500} height={372} className="ml-3 mob-resp" alt="Generic placeholder"
@@ -58,7 +58,7 @@ const FiturSectionTwo = () =>{
             </Col>
             <Col className="cont3" md={{ span: 4, offset: 1 }} sm={6} xs={6}>
                 <h1 className="head1"><i>Data Analytic</i></h1>
-                <p className="resp">Adanya data insight dan data lebih rinci yang memudahkan Anda melihat perkembangan<br/> dan mengambil keputusan .</p>
+                <p className="resp">Adanya data <i>insight</i> dan data lebih rinci yang memudahkan Anda melihat perkembangan<br/> dan mengambil keputusan.</p>
             </Col>             
         </Row>
 

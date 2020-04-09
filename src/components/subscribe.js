@@ -7,8 +7,7 @@ const Subscribe = () =>{
     return(
         <Container className="bg-blue w-100 ">
           {/* ROW 1 */}
-          <br/><br/><br/>
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-md-center section-pad-2">
           <Col md={{ span: 5, offset: 1 }}>
             <h5 className="txt-subs white">Solusi Pantau Kondisi Lebih Mudah</h5>          
           </Col>
@@ -19,7 +18,6 @@ const Subscribe = () =>{
                 </Button>
           </Col>
         </Row>
-        <br/><br/><br/>
         </Container>
 
 
