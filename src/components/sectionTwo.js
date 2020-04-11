@@ -10,7 +10,7 @@ const SectionTwo = () =>{
 
     return(
       <div>
-      <Container className="partition">
+      <Container className="partition section-pad-2">
         <Row className=" justify-content-center mlp5">
           <Image src={logo2} width="auto" height="auto"/>
         </Row>             

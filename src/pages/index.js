@@ -15,7 +15,6 @@ const IndexPage = () => (
     <Header/>    
 
     <SectionOne/>
-    <br/><br/><br/><br/>
     <SectionTwo/>
     <br/><br/><br/><br/>
     <SectionThree/>
