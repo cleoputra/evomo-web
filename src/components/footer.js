@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li className="li-fo"><b>Berhubungan dengan kami</b></li>
               <li><img className="lo-fo" src={logof} width="86" height="36" alt="Jeager"/></li>
-              <li className="li-fo">Jl. Sisingamangaraja No.4, Selong,<br/> Kec. Kby. Baru, Kota Jakarta Selatan,<br/> DKI Jakarta 12110</li>
+              <li className="li-fo resp">Jl. Sisingamangaraja No.4, Selong,<br/> Kec. Kby. Baru, Kota Jakarta Selatan,<br/> DKI Jakarta 12110</li>
               <li className="li-fo"><img src={mail} width="20" height="23" alt="Mail"/> hello@Jeager.io</li>
               <li className="li-fo"><img src={phone} width="20" height="23" alt="Mail"/> +6282211776239</li>
             </ul>

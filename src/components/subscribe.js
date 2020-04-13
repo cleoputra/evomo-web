@@ -13,9 +13,7 @@ const Subscribe = () =>{
           </Col>
 
           <Col md={6} sm={6}>
-                <Button variant="outline-primary white mls25">
-                    Free Trial
-                </Button>
+                <a href="https://wa.me/6282211776239" target="blank"><Button variant="outline-primary white mls25">Free Trial</Button></a>
           </Col>
         </Row>
         </Container>
