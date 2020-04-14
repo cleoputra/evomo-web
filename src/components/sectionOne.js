@@ -25,14 +25,14 @@ class SectionOne extends React.Component {
 
     render() {
         return(
-        <Container className="partition">
+        <Container className="partition mthead">
             <Row className="justify-content-md-center">
                 <Col md={{ span: 5, offset: 1, order: 1 }} large={6} xs={{order: 12}}>
                     <h1 className="sb resp">Realtime Monitoring <br/>Jadi Lebih Mudah</h1>
                     <p className="resp">
                         Ketahui kualitas lingkungan Anda <br/>dengan integrasi antara sensor dan <br/>sistem secara otomatis
-                    </p>
-                    <a href="https://wa.me/6282211776239"><Button className="b1" size="md">Free Trial</Button></a>
+                    </p> 
+                    <a href="https://wa.me/6282211776239"><Button className="b1" size="md">Free Trial</Button></a> <br className="show"></br>
                     <Image  className="i1" src={telkom}  />
                     <Image className="i1" src={sierra}  />
                     <Image className="i1" src={ibr}  />
