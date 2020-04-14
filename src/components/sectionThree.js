@@ -1,9 +1,9 @@
 import React from "react"
 import {Container, Row, Col} from 'react-bootstrap'
 import '../styles/global.css'
-import image1 from "../images/s3.svg"
-import image2 from "../images/s4.svg"
-import image3 from "../images/s5.svg"
+import image1 from "../images/s3.png"
+import image2 from "../images/s4.png"
+import image3 from "../images/s5.png"
 
 const SectionThree = () =>{
     

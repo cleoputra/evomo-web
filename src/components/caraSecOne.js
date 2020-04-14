@@ -1,10 +1,10 @@
 import React from "react"
 import {Container, Row, Col} from 'react-bootstrap'
 import '../styles/global.css'
-import image1 from "../images/ck1.svg"
-import image2 from "../images/ck2.svg"
-import image3 from "../images/ck3.svg"
-import image4 from "../images/ck4.svg"
+import image1 from "../images/ck1.png"
+import image2 from "../images/ck2.png"
+import image3 from "../images/ck3.png"
+import image4 from "../images/ck4.png"
 
 const FiturSectionOne = () =>{
     return(

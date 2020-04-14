@@ -1,7 +1,7 @@
 import React from "react"
 import {Container, Row, Col} from 'react-bootstrap'
 import '../styles/global.css'
-import image1 from "../images/f2.svg"
+import image1 from "../images/f2.png"
 
 const FiturSectionOne = () =>{
     return(
