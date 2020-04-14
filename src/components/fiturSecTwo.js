@@ -2,11 +2,11 @@ import React from "react"
 import {Container, Row, Col} from 'react-bootstrap'
 import '../styles/global.css'
 
-import image1 from "../images/f2a.svg"
-import image2 from "../images/f2b.svg"
-import image3 from "../images/f2c.svg"
-import image4 from "../images/f2d.svg"
-import image5 from "../images/f2e.svg"
+import image1 from "../images/f2a.png"
+import image2 from "../images/f2b.png"
+import image3 from "../images/f2c.png"
+import image4 from "../images/f2d.png"
+import image5 from "../images/f2e.png"
 
 const FiturSectionTwo = () =>{
 
