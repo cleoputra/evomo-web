@@ -186,10 +186,23 @@ body{
     padding-top: 75px;
     padding-bottom: 75px;
 }
+
+.mthead{
+    margin-top: 50px;
+}
+
+.mlhead{
+    margin-left: 300px;
+}
+
 /* MOBILE */
 @media (max-width: 600px) {
     body{
         max-width: auto;
+    }
+
+    .show{
+        display: flex;
     }
 
     br{
@@ -226,11 +239,18 @@ body{
         padding-left: 1rem !important;
     }
 
+    .mthead{
+        margin-top: 30px;
+    }
+
     /* SEC 1 */
     .i1-mob{
-     
         width: 340px;
         height: 243.52px;
+    }
+
+    .i1{
+        margin-left: 10px;
     }
 
     .sb{
