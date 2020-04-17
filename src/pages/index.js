@@ -8,10 +8,17 @@ import SectionTwo from "../components/sectionTwo"
 import SectionThree from "../components/sectionThree"
 import Subscribe from "../components/subscribe"
 import Footer from "../components/footer"
+import favicon from '../images/icon.png'
+import Helmet from 'react-helmet'
+
 
 
 const IndexPage = () => (
   <div>
+    <Helmet>
+        <link rel="icon" href={favicon} />
+    </Helmet>
+    
     <Header/>    
 
     <SectionOne/>
