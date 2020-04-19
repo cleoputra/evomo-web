@@ -34,7 +34,7 @@ const Webinar = () => (
                         <Card.Text>
                         
                         </Card.Text>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCGdrHsFWS-ANcf22JCznvv5div7VLyDlpxHSyMExufA_rww/viewform?usp=sf_link" target="blank"><Button variant="primary">Daftar Sekarang</Button></a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCGdrHsFWS-ANcf22JCznvv5div7VLyDlpxHSyMExufA_rww/viewform?usp=sf_link" target="blank"><Button variant="primary">Daftar Sekarang, Gratis!</Button></a>
                     </Card.Body>
                 </Card>
                 </Col>
