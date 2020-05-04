@@ -29,6 +29,7 @@
     "typeface-poppins": "0.0.72"
   },
   "devDependencies": {
+    "gatsby-plugin-remove-trailing-slashes": "^2.3.0",
     "prettier": "^1.18.2"
   },
   "keywords": [

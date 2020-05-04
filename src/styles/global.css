@@ -12,6 +12,14 @@ body{
     text-align: center;
 }
 
+.t-banner{
+    font-size: 12px;
+    line-height: 18px;
+    color: #2B2B2B;
+    text-align: right;
+    margin-right: 8%;
+}
+
 .pad-header{
     padding-left: 9.5rem;
     padding-right: 9rem;
@@ -94,6 +102,7 @@ body{
     position: relative;
     bottom: 0;
     width: 100%;
+    padding-left: 7%;
 }
 
 .page-container{
@@ -188,13 +197,21 @@ body{
 }
 
 .mthead{
-    margin-top: gi50px;
+    margin-top: 50px;
 }
 
 .mlhead{
     margin-left: 300px;
 }
 
+.blog-mb{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.h-banner{
+    text-align: end !important;
+}
 /* MOBILE */
 @media (max-width: 600px) {
     body{
@@ -319,6 +336,17 @@ body{
     /* footer */
     .no-flex{
         flex-basis:auto ;
+    }
+
+    .blog-mb{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .main-footer{
+        padding-left: 0%;
+        padding-top: 1.5em;
+
     }
 }
 

@@ -7,7 +7,7 @@ import Header from  "../components/header"
 import Subscribe from "../components/subscribe"
 import Footer from "../components/footer"
 import '../styles/global.css'
-import webinar1 from "../images/webinar_1.jpg"
+import webinar1 from "../images/webinar_2.jpeg"
 
 import favicon from '../images/icon.png'
 import Helmet from 'react-helmet'
@@ -16,7 +16,6 @@ import Helmet from 'react-helmet'
 
 const Webinar = () => (
     <div>
-
         <Helmet>
             <link rel="icon" href={favicon} />
         </Helmet>
@@ -25,20 +24,23 @@ const Webinar = () => (
 
         <Container className="partition mthead">
             <Row className="justify-content-md-center">
-                <Col md={{ span: 5, offset: 1, order: 1 }} large={6} xs={{order: 12}}>
+                <Col md={{ span: 3,  order: 1 }} large={6} xs={{order: 12}}>
             
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={webinar1} />
-                    <Card.Body>
-                        <Card.Title>Online Seminar IoT: Internet of Things Kini dan Nanti</Card.Title>
-                        <Card.Text>
-                        
-                        </Card.Text>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCGdrHsFWS-ANcf22JCznvv5div7VLyDlpxHSyMExufA_rww/viewform?usp=sf_link" target="blank"><Button variant="primary">Daftar Sekarang, Gratis!</Button></a>
-                    </Card.Body>
-                </Card>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={webinar1} />
+                        <Card.Body>
+                            <Card.Title>“Go Lang dan Python dalam <i>development</i> IoT“</Card.Title>
+                            <Card.Text>
+                            
+                            </Card.Text>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSejgPdh-tYp9SKw3tlFVNwqW_c9CwMUpSLDYRC5CX4jgC4EEg/viewform" target="blank"><Button variant="primary">Daftar Sekarang, Gratis!</Button></a>
+                        </Card.Body>
+                        <hr/>
+                    </Card>
+                
                 </Col>
             </Row>
+
         </Container>
 
         <Subscribe/>
