@@ -11,7 +11,6 @@ import Footer from "../components/footer"
 import favicon from '../images/icon.png'
 import Helmet from 'react-helmet'
 
-import {Container} from 'react-bootstrap'
 
 
 
@@ -20,11 +19,6 @@ const IndexPage = () => (
     <Helmet>
         <link rel="icon" href={favicon} />
     </Helmet>
-
-    <Container>
-        <p className="t-banner"> Login &nbsp;</p>
-    </Container> 
-
     <Header/>    
 
     <SectionOne/>
