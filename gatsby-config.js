@@ -14,6 +14,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-remove-trailing-slashes`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
