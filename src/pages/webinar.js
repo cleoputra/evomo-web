@@ -7,7 +7,7 @@ import Header from  "../components/header"
 import Subscribe from "../components/subscribe"
 import Footer from "../components/footer"
 import '../styles/global.css'
-import webinar1 from "../images/webinar_2.jpeg"
+import webinar1 from "../images/webinar_3.jpeg"
 
 import favicon from '../images/icon.png'
 import Helmet from 'react-helmet'
@@ -29,11 +29,11 @@ const Webinar = () => (
                     <Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={webinar1} />
                         <Card.Body>
-                            <Card.Title>“Go Lang dan Python dalam <i>development</i> IoT“</Card.Title>
+                        <Card.Title>“Go Lang dan Python dalam <i>development</i> IoT“</Card.Title>
                             <Card.Text>
                             
                             </Card.Text>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSejgPdh-tYp9SKw3tlFVNwqW_c9CwMUpSLDYRC5CX4jgC4EEg/viewform" target="blank"><Button variant="primary">Daftar Sekarang, Gratis!</Button></a>
+                            <a href="https://bit.ly/evomoconf3" target="blank"><Button variant="primary">Daftar Sekarang, Gratis!</Button></a>
                         </Card.Body>
                         <hr/>
                     </Card>
