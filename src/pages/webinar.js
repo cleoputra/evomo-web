@@ -29,7 +29,7 @@ const Webinar = () => (
                     <Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={webinar1} />
                         <Card.Body>
-                        <Card.Title>“Go Lang dan Python dalam <i>development</i> IoT“</Card.Title>
+                        <Card.Title>“Peluang IoT dan Automation dalam Menghadapi Industri 4.0 Indonesia“</Card.Title>
                             <Card.Text>
                             
                             </Card.Text>
