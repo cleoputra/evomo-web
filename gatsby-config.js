@@ -33,6 +33,13 @@ module.exports = {
         trackingId: "UA-117703110-3",
       },
     },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@jeagersolution`,
+        limit: 200,
+      },
+    },
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
