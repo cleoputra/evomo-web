@@ -36,8 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-source-medium`,
       options: {
-        username: `@jeagersolution`,
-        limit: 200,
+        username: 'jeager-industrial-internet-of-things',
       },
     },
     `gatsby-plugin-sass`,
