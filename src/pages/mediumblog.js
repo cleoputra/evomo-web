@@ -1,6 +1,6 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import {Container, Row, Card} from 'react-bootstrap'
+import { useStaticQuery, graphql } from "gatsby"
+import { Container,Row, Card, Col, CardDeck} from 'react-bootstrap'
 
 
 import Header from  "../components/header"
@@ -8,65 +8,71 @@ import Subscribe from "../components/subscribe"
 import Footer from "../components/footer"
 import favicon from '../images/icon.png'
 import Helmet from 'react-helmet'
-
-
 import "../styles/styles.scss"
 
 
-
-export default function MediumBlog() {
-    const data = useStaticQuery(graphql`
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
     query {
-      allMediumPost{
-        edges{
-          node{
-            title
+      allMediumPost(sort: { fields: [createdAt], order: DESC }) {
+        edges { 
+          node {
+            id
             createdAt(formatString: "DD MMMM YYYY")
+            title
             uniqueSlug
+            virtuals {
+              subtitle
+              previewImage {
+                imageId
+              }
+            }
+            author {
+              name
+            }
+          }
         }
       }
-  }
-}
-`)
-return (
+    }
+  `)
+  console.log(data.allMediumPost.edges)
+
+  return (
     <div>
-        <Helmet>
-        <link rel="icon" href={favicon} />
-        </Helmet>
-        
-        <Header/>
-            <br/>
+    <Helmet>
+    <link rel="icon" href={favicon} />
+    </Helmet>
+    
+    <Header/>
+        <br/>
 
-            <Container>
-                <Row className="justify-content-md-center mb3"> 
-                    {data.allMediumPost.edges.map(edge => {
-                        return (
-                            <a 
-                            href={`https://medium.com/@jeagersolution/${edge.node.uniqueSlug}`} rel="noopener noreferrer" target="_blank">
-                        
-                            <Card border="info" style={{ width: '48rem' }}>
-                                <Card.Body>
-                                    <Card.Title>{edge.node.title}</Card.Title>
-                                    <Card.Text>
-                                    {edge.node.createdAt}
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                            <br/>
-                            </a>
-                        )
-                    })}
-
-
-                </Row>
-            </Container>    
-            
+        <Container>
+         <Row  >
+          <CardDeck className="justify-content-md-center">
+              {data.allMediumPost.edges.map(edge => {
+                return (
+                <Col xs="4" md="auto">
+                      <Card className="b-none" style={{ width: '15rem', height: '30rem',  }}>
+                        <Card.Img variant="top" src={`https://cdn-images-1.medium.com/fit/c/140/120/${edge.node.virtuals.previewImage.imageId}`}
+              alt={edge.node.virtuals.previewImage.imageId} />
+                        <Card.Body>
+                          <a href={`https://medium.com/jeager-industrial-internet-of-things/${edge.node.uniqueSlug}`} rel="noopener noreferrer" target="_blank"><Card.Title>{edge.node.title}</Card.Title></a>
+                          <Card.Text>{edge.node.createdAt}</Card.Text>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                    )
+                })}
+              </CardDeck>                   
+            </Row>
+          </Container>  
         
-            <Subscribe/>
-        
-        <Footer/>
-    </div>
-       
-   
+    
+        <Subscribe/>
+    
+    <Footer/>
+</div>
   )
 }
+
+export default IndexPage
