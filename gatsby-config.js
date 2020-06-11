@@ -36,6 +36,7 @@ module.exports = {
     {
       resolve: `gatsby-source-medium`,
       options: {
+        
         username: 'jeager-industrial-internet-of-things',
       },
     },
