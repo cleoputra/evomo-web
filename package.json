@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Goldi Abdi <abdigoldi@gmail.com>",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.28",
     "gatsby-image": "^2.3.1",
